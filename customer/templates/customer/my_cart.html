@@ -1,0 +1,51 @@
+{% extends 'common/common_page.html' %}
+{% block content %}
+
+<h1 class="display-4">My Cart</h1>
+
+<table class="table table-primary">
+    <thead>
+      <tr>
+        <th scope="col">slno</th>
+        <th scope="col">Image</th>
+        <th scope="col">Product name</th>
+        <th scope="col">Price</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>img</td>
+        <td>fan</td>
+        <td>1200</td>
+        <td>
+            <div class="card-body">
+                <a href="{% url 'customer:check_out' %}" class="btn btn-primary">Buy Now</a>
+                <a href="#" class="btn btn-danger"> Cancel</a>
+              </div>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>img</td>
+        <td>pen</td>
+        <td>10</td>
+        <td><div class="card-body">
+            <a href="{% url 'customer:check_out' %}" class="btn btn-primary">Buy Now</a>
+            <a href="#" class="btn btn-danger"> Cancel</a>
+          </div></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>img</td>
+        <td>tv</td>
+        <td>15000</td>
+        <td><div class="card-body">
+            <a href="{% url 'customer:check_out' %}" class="btn btn-primary">Buy Now</a>
+            <a href="#" class="btn btn-danger"> Cancel</a>
+          </div></td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock %}

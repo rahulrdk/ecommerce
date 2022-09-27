@@ -31,7 +31,7 @@
                   Profile
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Cart</a></li>
+                  <li><a class="dropdown-item" href="{% url 'customer:my_cart' %}">Cart</a></li>
                   <li><a class="dropdown-item" href="{% url 'customer:my_order' %}">My order</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Change password</a></li>
@@ -64,31 +64,47 @@
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
+                
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-3 col-form-label">Price</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" value="2000" aria-label="readonly input example" style="width: 150px;" readonly>
+                        </div>
+                    </div>
+                  </li>
+                  <!-- <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li> -->
                 </ul>
                 <div class="card-body">
-                    <a href="#" class="btn btn-primary">Continue</a>
+                    <a href="{% url 'customer:check_out' %}" class="btn btn-primary">Continue</a>
                     <a href="#" class="btn btn-primary">Add to cart</a>
                 </div>
-              </div>
-          </div>
-          <div class="col">
+            </div>
+        </div>
+        <div class="col">
             <div class="card" style="width: 18rem;">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
+                
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
+                  <li class="list-group-item">
+                    <div class="row mb-3">
+                        <label for="inputEmail3" class="col-sm-3 col-form-label">Price</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" value="2000" aria-label="readonly input example" style="width: 150px;" readonly>
+                        </div>
+                    </div>
+                  </li>
+                  <!-- <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li> -->
                 </ul>
                 <div class="card-body">
-                    <a href="#" class="btn btn-primary">Continue</a>
+                    <a href="{% url 'customer:check_out' %}" class="btn btn-primary">Continue</a>
                     <a href="#" class="btn btn-primary">Add to cart</a>
                 </div>
               </div>
