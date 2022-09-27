@@ -1,0 +1,44 @@
+{% extends 'common/common_page.html' %}
+{% block content %}
+
+<h1 class="display-4">My Order</h1>
+
+<table class="table table-primary">
+    <thead>
+      <tr>
+        <th scope="col">Order Id</th>
+        <th scope="col">Image</th>
+        <th scope="col">Product name</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Shipping address</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>2</td>
+        <td>calicut</td>
+        <td>1200</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>pen</td>
+        <td>2</td>
+        <td>kochi</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry the Bird</td>
+        <td>tv</td>
+        <td>1</td>
+        <td>calicut</td>
+        <td>25000</td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock %}
