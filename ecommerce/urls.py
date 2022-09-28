@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('common.urls')),
-    # path('ecom_admin/',include('ecom_admin.urls')),
+    path('ecom_admin/',include('ecom_admin.urls')),
     path('seller/',include('seller.urls')),
     path('customer/',include('customer.urls')),
 
