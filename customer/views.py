@@ -10,3 +10,6 @@ def check_out(request):
 
 def my_cart(request):
     return render(request,'customer/my_cart.html')
+
+def customer_profile(request):
+    return render(request,'customer/customer_profile.html')
